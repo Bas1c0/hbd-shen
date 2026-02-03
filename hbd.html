@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday shen</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg,#fdfbfb,#ebedee);
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+        color: #ff7a7a;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+        opacity: 0;
+        animation: textFade 1s ease forwards;
+    }
+
+    p:nth-child(2) { animation-delay: 0.5s; }
+    p:nth-child(3) { animation-delay: 1s; }
+    p:nth-child(4) { animation-delay: 1.5s; }
+
+    @keyframes fadeIn {
+        from { transform: scale(0.9); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes textFade {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎉 Happy Birthday 🎂</h1>
+    <p>ขออวยพรให้คุณ <strong>shen</strong></p>
+    <p>มีความสุขในวันเกิด</p>
+    <p>ประสบความสำเร็จในสิ่งที่ตั้งใจ</p>
+    <p>และมีสุขภาพแข็งแรงเสมอ 😊</p>
+</div>
+
+</body>
+</html>
